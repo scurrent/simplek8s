@@ -1,0 +1,17 @@
+#StatefulSet, ReplicaController, Pod, Service
+# Config file used to create object - Pod used to create a container, Service to do networking,
+
+
+#version v1 means we can make of object types we can create
+apiVerison: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: client
+            image: scurrent/multi-client
+            ports:
+              - containerPort: 3000
