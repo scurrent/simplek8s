@@ -3,7 +3,7 @@
 
 
 #version v1 means we can make of object types we can create
-apiVerison: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: client-pod
@@ -12,6 +12,6 @@ metadata:
 spec:
   containers:
     - name: client
-            image: scurrent/multi-client
-            ports:
-              - containerPort: 3000
+      image: scurrent/multi-client
+      ports:
+          - containerPort: 3000
